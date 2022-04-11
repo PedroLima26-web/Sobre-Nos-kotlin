@@ -12,6 +12,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+    <EditText
+        android:id="@+id/nickname_edit"
+        android:hint="Qual seu nome?"
+        android:autofillHints="name"
+        android:text=""
+        android:inputType="textPersonName"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <Button
+        android:id="@+id/done_button"
+        android:text="Done"
+        android:layout_gravity="center_horizontal"
+        android:onClick="clickHandlerFunction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/nickname_text"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:text=""
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
     <ImageView
         android:id="@+id/star_image"
         android:contentDescription="Yellow Star"
@@ -26,16 +53,7 @@
         <TextView
             android:id="@+id/bio_text"
             android:lineSpacingMultiplier="1.2"
-            android:text="Hi, my name is Aleks.
-\n\nI love fish.
-\n\nThe kind that is alive and swims around in an aquarium or river, or a lake, and definitely the ocean.
-\nFun fact is that I have several aquariums and also a river.
-\n\nI like eating fish, too. Raw fish. Grilled fish. Smoked fish. Poached fish - not so much.
-\nAnd sometimes I even go fishing.
-\nAnd even less sometimes, I actually catch something.
-\n\nOnce, when I was camping in Canada, and very hungry, I even caught a large salmon with my hands.
-\n\nI\'ll be happy to teach you how to make your own aquarium.
-\nYou should ask someone else about fishing, though.\n\n"
+            android:text="@string/bio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
